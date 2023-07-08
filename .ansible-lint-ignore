@@ -1,0 +1,3 @@
+molecule_multipass/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/converge.yml yaml[line-length]
+molecule_multipass/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/create.yml yaml[line-length]
+molecule_multipass/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/destroy.yml yaml[line-length]

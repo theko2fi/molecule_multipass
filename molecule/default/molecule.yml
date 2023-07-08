@@ -1,0 +1,11 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: molecule_multipass
+platforms:
+  - name: instance-molecule
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
