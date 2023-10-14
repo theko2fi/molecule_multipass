@@ -122,4 +122,4 @@ class Multipass(Driver):
     def required_collections(self) -> dict[str, str]:
         """Return collections dict containing names and versions required."""
         # https://galaxy.ansible.com/community/docker
-        return {"theko2fi.multipass": "0.1.0"}
+        return {"theko2fi.multipass": "0.2.0"}

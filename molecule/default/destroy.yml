@@ -16,6 +16,7 @@
       theko2fi.multipass.multipass_vm:
         name: "{{ item.name }}"
         state: absent
+        purge: true
       register: server
       loop: "{{ molecule_yml.platforms }}"
       loop_control:

@@ -20,12 +20,12 @@
       theko2fi.multipass.multipass_vm:
         name: "{{ item.name }}"
         cloud_init: "{{ item.cloud_init | default(omit) }}"
-        cpu: "{{ item.cpu | default(omit) }}"
+        cpus: "{{ item.cpu | default(omit) }}"
         disk: "{{ item.disk | default(omit) }}"
         image: "{{ item.image | default(omit) }}"
         memory: "{{ item.memory | default(omit) }}"
         recreate: "{{ item.recreate | default(omit) }}"
-        state: "{{ item.state | default(omit) }}"
+        state: 'started'
       register: server
       with_items: "{{ molecule_yml.platforms }}"
       loop_control:
